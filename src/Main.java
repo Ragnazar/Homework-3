@@ -76,13 +76,13 @@ public class Main {
         int gramsInKg = 1000;
 
         double daysWithBottomLath = toShredWeight * Math.ceil((double) gramsInKg / bottomLath);
-        System.out.println(daysWithBottomLath + " дней потребуется, если сбрасывать по " + bottomLath + " граммов в день");
+        System.out.println((int) daysWithBottomLath + " дней потребуется, если сбрасывать по " +  bottomLath + " граммов в день");
 
         double daysWithTopLath = toShredWeight * Math.ceil((double) gramsInKg / topLath);
-        System.out.println(daysWithTopLath + " дней потребуется, если сбрасывать по " + topLath + " граммов в день");
+        System.out.println((int)daysWithTopLath + " дней потребуется, если сбрасывать по " + topLath + " граммов в день");
 
         double averageDaysTake = Math.ceil((daysWithTopLath + daysWithBottomLath) / 2);
-        System.out.println("В среднем, чтобы скинуть " + toShredWeight + " кг, потребуется " + averageDaysTake + " день");
+        System.out.println("В среднем, чтобы скинуть " + toShredWeight + " кг, потребуется " + (int) averageDaysTake + " день");
     }
     public static void task5()
 
