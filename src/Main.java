@@ -9,9 +9,7 @@ public class Main {
 
     }
 
-    public static void task1()
-
-    {
+    public static void task1() {
         var keyWord = 1;
         System.out.println(keyWord);
         byte byteVariable = 2;
@@ -32,9 +30,7 @@ public class Main {
         System.out.println(bool);
     }
 
-    public static void task2()
-
-    {
+    public static void task2() {
         float firstBoxerWeight = 78.2f;
         float secondBoxerWeight = 82.7f;
         float sumOfWeights = firstBoxerWeight + secondBoxerWeight;
@@ -44,9 +40,7 @@ public class Main {
         System.out.println("Разница в весе боксеров составляет " + difOfWeights + " кг.");
     }
 
-    public static void task3()
-
-    {
+    public static void task3() {
         byte numberOfBananas = 5;
         short bananaWeight = 80;
 
@@ -63,30 +57,27 @@ public class Main {
         int milkWeight = milkPortion * milkPortionWeight;
 
         int totalBreakfastWeight = numberOfBananas * bananaWeight + milkWeight + countOfIceCreamPackages * iceCreamPackageWeight + countOfEggs * eggWeight;
-        double reducedWeight = (double)totalBreakfastWeight / gramsInKg;
+        double reducedWeight = (double) totalBreakfastWeight / gramsInKg;
         System.out.println("Вес спорт-завтрака составил " + reducedWeight + " кг.");
     }
 
-    public static void task4()
-
-    {
+    public static void task4() {
         short bottomLath = 250;
         short topLath = 500;
         byte toShredWeight = 7;
         int gramsInKg = 1000;
 
         double daysWithBottomLath = toShredWeight * Math.ceil((double) gramsInKg / bottomLath);
-        System.out.println((int) daysWithBottomLath + " дней потребуется, если сбрасывать по " +  bottomLath + " граммов в день");
+        System.out.println((int) daysWithBottomLath + " дней потребуется, если сбрасывать по " + bottomLath + " граммов в день");
 
         double daysWithTopLath = toShredWeight * Math.ceil((double) gramsInKg / topLath);
-        System.out.println((int)daysWithTopLath + " дней потребуется, если сбрасывать по " + topLath + " граммов в день");
+        System.out.println((int) daysWithTopLath + " дней потребуется, если сбрасывать по " + topLath + " граммов в день");
 
         double averageDaysTake = Math.ceil((daysWithTopLath + daysWithBottomLath) / 2);
         System.out.println("В среднем, чтобы скинуть " + toShredWeight + " кг, потребуется " + (int) averageDaysTake + " день");
     }
-    public static void task5()
 
-    {
+    public static void task5() {
         int salaryOfMasha = 67760;
         int salaryOfDenis = 83690;
         int salaryOfChristina = 76230;
@@ -111,5 +102,4 @@ public class Main {
         System.out.println("Денис теперь получает " + incSalaryOfDenis + " рублей. Годовой доход вырос на " + difOfAnnualIncomeOfDenis + " рублей");
         System.out.println("Кристина теперь получает " + incSalaryOfChristina + " рубля. Годовой доход вырос на " + difOfAnnualIncomeOfChristina + " рублей");
     }
-
 }
