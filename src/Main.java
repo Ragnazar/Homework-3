@@ -6,6 +6,9 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
+        task7();
+        task8();
 
     }
 
@@ -101,5 +104,34 @@ public class Main {
         System.out.println("Маша теперь получает " + incSalaryOfMasha + " рублей. Годовой доход вырос на " + difOfAnnualIncomeOfMasha + " рубля");
         System.out.println("Денис теперь получает " + incSalaryOfDenis + " рублей. Годовой доход вырос на " + difOfAnnualIncomeOfDenis + " рублей");
         System.out.println("Кристина теперь получает " + incSalaryOfChristina + " рубля. Годовой доход вырос на " + difOfAnnualIncomeOfChristina + " рублей");
+    }
+
+    private static void task6() {
+        int a = 12;
+        int b = 27;
+        int c = 44;
+        int d = 15;
+        int e = 9;
+        int result;
+        result = a * (b + (c - d * e));
+        System.out.println(result);
+        int resultInverted = -result;
+        System.out.println(resultInverted);
+    }
+
+    private static void task7() {
+        int a = 5;
+        int b = 7;
+         a = a + b % a;
+         b = 5;
+        System.out.println(a+ " " + b);
+    }
+
+    private static void task8() {
+        int a = 190;
+        int b;
+        b = a / 10;
+        b = b % 10;
+        System.out.println(b);
     }
 }
